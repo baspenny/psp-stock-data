@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+functions-framework = "*"
+requests = "*"
+beautifulsoup4 = "*"
+pandas = "*"
+pandas-gbq = "*"
+google = "*"
+datetime = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"

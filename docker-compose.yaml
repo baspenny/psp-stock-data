@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  app:
+    image: python:3.12-slim
+    command: tail -f /dev/null
+    build: .
+    volumes:
+      - .:/app
+      - $HOME/.config/gcloud/application_default_credentials.json:/gcp/creds.json:ro
+    environment:
+      GOOGLE_APPLICATION_CREDENTIALS: /gcp/creds.json
